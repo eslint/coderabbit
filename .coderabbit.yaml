@@ -1,0 +1,10 @@
+# yaml-language-server: $schema=https://coderabbit.ai/integrations/schema.v2.json
+reviews:
+  auto_review:
+    # Ignore release PRs
+    labels: ["!autorelease: pending"]
+
+    # Ignore PRs from these users
+    ignore_usernames:
+      - "dependabot[bot]"
+      - "renovate[bot]"
